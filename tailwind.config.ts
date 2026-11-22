@@ -25,9 +25,12 @@ export default {
           DEFAULT: "#1F1A1C",
           soft: "#5E5558",
         },
+        blush: "#F3E6E8",
+        plum: "#3A1B28",
       },
       fontFamily: {
         sans: ["var(--font-geist-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+        serif: ['"Playfair Display"', "Georgia", "Cambria", "serif"],
       },
       boxShadow: {
         card: "0 18px 50px -24px rgba(60, 20, 32, 0.28)",
