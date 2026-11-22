@@ -15,12 +15,12 @@ const HEIGHTS = Array.from({ length: 31 }, (_, i) => {
 });
 
 const box =
-  "relative flex h-11 items-center rounded-md border border-maroon/15 bg-white text-sm text-ink transition focus-within:border-maroon focus-within:ring-4 focus-within:ring-maroon/10";
-const control = "h-full w-full appearance-none bg-transparent pr-7 text-sm outline-none";
+  "relative flex h-11 items-center rounded-full border border-maroon/15 bg-white text-sm text-ink transition focus-within:border-maroon focus-within:ring-4 focus-within:ring-maroon/10";
+const control = "h-full w-full appearance-none bg-transparent pr-8 text-sm outline-none";
 const label = "mb-1.5 block text-xs font-semibold text-ink";
 
 function Chevron() {
-  return <ChevronDown className="pointer-events-none absolute right-2.5 h-4 w-4 text-ink-soft" aria-hidden />;
+  return <ChevronDown className="pointer-events-none absolute right-3.5 h-4 w-4 text-ink-soft" aria-hidden />;
 }
 
 export default function HeroSearch() {
@@ -48,7 +48,7 @@ export default function HeroSearch() {
     <form
       onSubmit={submit}
       aria-label="Start your search"
-      className="grid gap-5 rounded-xl bg-white p-5 shadow-card ring-1 ring-maroon/5 sm:p-6 lg:grid-cols-[230px_1fr] lg:items-center lg:gap-8"
+      className="grid gap-5 rounded-3xl bg-white p-5 shadow-card ring-1 ring-maroon/5 sm:p-6 lg:grid-cols-[230px_1fr] lg:items-center lg:gap-8"
     >
       <div className="flex items-start gap-3">
         <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-maroon-50">
@@ -66,7 +66,7 @@ export default function HeroSearch() {
         <div>
           <label htmlFor="s-name" className={label}>Name</label>
           <div className={box}>
-            <User className="pointer-events-none ml-3 mr-2 h-4 w-4 shrink-0 text-maroon/70" aria-hidden />
+            <User className="pointer-events-none ml-4 mr-2 h-4 w-4 shrink-0 text-maroon/70" aria-hidden />
             <input
               id="s-name"
               type="text"
@@ -81,7 +81,7 @@ export default function HeroSearch() {
         <div>
           <span className={label}>Age</span>
           <div className="flex items-center gap-1.5">
-            <div className={`${box} flex-1 pl-3`}>
+            <div className={`${box} flex-1 pl-4`}>
               <select aria-label="Minimum age" value={ageMin} onChange={(e) => setAgeMin(e.target.value)} className={control}>
                 {AGES.map((a) => (
                   <option key={a} value={a} disabled={a > Number(ageMax)}>{a}</option>
@@ -90,7 +90,7 @@ export default function HeroSearch() {
               <Chevron />
             </div>
             <span className="text-xs text-ink-soft">to</span>
-            <div className={`${box} flex-1 pl-3`}>
+            <div className={`${box} flex-1 pl-4`}>
               <select aria-label="Maximum age" value={ageMax} onChange={(e) => setAgeMax(e.target.value)} className={control}>
                 {AGES.map((a) => (
                   <option key={a} value={a} disabled={a < Number(ageMin)}>{a}</option>
@@ -104,7 +104,7 @@ export default function HeroSearch() {
         <div>
           <label htmlFor="s-religion" className={label}>Religion</label>
           <div className={box}>
-            <CalendarHeart className="pointer-events-none ml-3 mr-2 h-4 w-4 shrink-0 text-maroon/70" aria-hidden />
+            <CalendarHeart className="pointer-events-none ml-4 mr-2 h-4 w-4 shrink-0 text-maroon/70" aria-hidden />
             <select id="s-religion" value={religion} onChange={(e) => setReligion(e.target.value)} className={control}>
               {RELIGIONS.map((r) => (
                 <option key={r} value={r}>{r}</option>
@@ -117,7 +117,7 @@ export default function HeroSearch() {
         <div>
           <span className={label}>Height</span>
           <div className="flex items-center gap-1.5">
-            <div className={`${box} flex-1 pl-3`}>
+            <div className={`${box} flex-1 pl-4`}>
               <select aria-label="Minimum height" value={heightMin} onChange={(e) => setHeightMin(e.target.value)} className={control}>
                 <option value="">Any</option>
                 {HEIGHTS.map((h) => (
@@ -127,7 +127,7 @@ export default function HeroSearch() {
               <Chevron />
             </div>
             <span className="text-xs text-ink-soft">to</span>
-            <div className={`${box} flex-1 pl-3`}>
+            <div className={`${box} flex-1 pl-4`}>
               <select aria-label="Maximum height" value={heightMax} onChange={(e) => setHeightMax(e.target.value)} className={control}>
                 <option value="">Any</option>
                 {HEIGHTS.map((h) => (
@@ -141,7 +141,7 @@ export default function HeroSearch() {
 
         <button
           type="submit"
-          className="flex h-11 items-center justify-center gap-2 rounded-md bg-maroon px-6 text-sm font-semibold text-white transition hover:bg-maroon-dark sm:col-span-2 lg:col-span-1"
+          className="flex h-11 items-center justify-center gap-2 rounded-full bg-maroon px-6 text-sm font-semibold text-white transition hover:bg-maroon-dark sm:col-span-2 lg:col-span-1"
         >
           <Search className="h-4 w-4" aria-hidden />
           Find matches

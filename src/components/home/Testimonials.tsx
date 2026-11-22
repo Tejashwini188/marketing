@@ -39,7 +39,7 @@ export default function Testimonials() {
             {visible.map((s, i) => (
               <figure
                 key={`${s.names}-${i}`}
-                className={`rounded-xl border border-maroon/10 bg-ivory/60 p-7 ${i > 0 ? "hidden md:block" : ""}`}
+                className={`rounded-3xl border border-maroon/10 bg-ivory/60 p-7 ${i > 0 ? "hidden md:block" : ""}`}
               >
                 <div className="flex items-center gap-3">
                   <Quote className="h-7 w-7 fill-maroon-100 text-maroon-100" aria-hidden />

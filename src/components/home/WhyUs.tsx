@@ -13,7 +13,7 @@ export default function WhyUs() {
   return (
     <section className="mx-auto grid max-w-7xl gap-6 px-5 pb-20 lg:grid-cols-2 lg:px-8">
       {/* Photo with overlay card */}
-      <div className="relative min-h-[380px] overflow-hidden rounded-xl">
+      <div className="relative min-h-[380px] overflow-hidden rounded-3xl">
         <Image
           src="/images/hero-wedding.jpg"
           alt=""
@@ -22,7 +22,7 @@ export default function WhyUs() {
           className="object-cover object-[50%_35%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-plum/30 to-transparent" />
-        <div className="relative m-6 max-w-sm rounded-lg bg-maroon/90 p-7 text-white backdrop-blur sm:m-10">
+        <div className="relative m-6 max-w-sm rounded-3xl bg-maroon/90 p-7 text-white backdrop-blur sm:m-10">
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-maroon-100">Why choose us</p>
           <h2 className="mt-3 font-serif text-3xl leading-snug">Trusted care for your most important decision</h2>
           <p className="mt-4 text-sm leading-relaxed text-white/85">
@@ -31,7 +31,7 @@ export default function WhyUs() {
           </p>
           <Link
             href="/about"
-            className="mt-6 inline-block rounded-md bg-white px-5 py-2.5 text-sm font-semibold text-maroon transition hover:bg-maroon-50"
+            className="mt-6 inline-block rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-maroon transition hover:bg-maroon-50"
           >
             Learn more about us
           </Link>
@@ -39,7 +39,7 @@ export default function WhyUs() {
       </div>
 
       {/* 2×2 feature grid */}
-      <div className="grid grid-cols-1 overflow-hidden rounded-xl bg-blush/60 sm:grid-cols-2">
+      <div className="grid grid-cols-1 overflow-hidden rounded-3xl bg-blush/60 sm:grid-cols-2">
         {POINTS.map(({ icon: Icon, title, body }, i) => (
           <div
             key={title}

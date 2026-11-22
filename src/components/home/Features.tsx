@@ -25,9 +25,9 @@ export default function Features() {
         {FEATURES.map(({ icon: Icon, title, body, href }) => (
           <article
             key={title}
-            className="group flex flex-col rounded-xl border border-maroon/10 bg-white text-center shadow-sm transition hover:-translate-y-1 hover:shadow-card"
+            className="group flex flex-col rounded-3xl border border-maroon/10 bg-white text-center shadow-sm transition hover:-translate-y-1 hover:shadow-card"
           >
-            <div className="h-20 rounded-t-xl bg-gradient-to-br from-blush via-maroon-50 to-ivory" />
+            <div className="h-20 rounded-t-3xl bg-gradient-to-br from-blush via-maroon-50 to-ivory" />
             <span className="mx-auto -mt-7 grid h-14 w-14 place-items-center rounded-full bg-white shadow-card ring-1 ring-maroon/10">
               <Icon className="h-6 w-6 text-maroon" aria-hidden />
             </span>

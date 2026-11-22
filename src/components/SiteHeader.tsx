@@ -49,13 +49,13 @@ export default function SiteHeader() {
         <div className="flex items-center gap-1 sm:gap-3">
           <Link
             href="/login"
-            className="whitespace-nowrap rounded-md px-3 py-2 text-sm font-semibold text-maroon transition hover:bg-maroon-50"
+            className="whitespace-nowrap rounded-full px-3 py-2 text-sm font-semibold text-maroon transition hover:bg-maroon-50"
           >
             Log in
           </Link>
           <Link
             href="/register"
-            className="whitespace-nowrap rounded-md bg-maroon px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-maroon-dark"
+            className="whitespace-nowrap rounded-full bg-maroon px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-maroon-dark"
           >
             Register free
           </Link>

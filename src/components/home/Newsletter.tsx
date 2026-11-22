@@ -30,13 +30,13 @@ export default function Newsletter() {
           </p>
 
           {done ? (
-            <p className="mt-6 rounded-md bg-white px-4 py-3 text-sm font-medium text-maroon" role="status">
+            <p className="mt-6 rounded-full bg-white px-4 py-3 text-sm font-medium text-maroon" role="status">
               Thank you — you&apos;re on the list.
             </p>
           ) : (
             <form onSubmit={submit} className="mt-6 flex max-w-md flex-col gap-3 sm:flex-row">
               <label htmlFor="nl-email" className="sr-only">Email address</label>
-              <div className="flex h-11 flex-1 items-center rounded-md border border-maroon/15 bg-white px-3 focus-within:border-maroon">
+              <div className="flex h-11 flex-1 items-center rounded-full border border-maroon/15 bg-white px-3 focus-within:border-maroon">
                 <input
                   id="nl-email"
                   type="email"
@@ -48,7 +48,7 @@ export default function Newsletter() {
                 />
                 <Mail className="h-4 w-4 text-ink-soft" aria-hidden />
               </div>
-              <button type="submit" className="h-11 rounded-md bg-maroon px-6 text-sm font-semibold text-white transition hover:bg-maroon-dark">
+              <button type="submit" className="h-11 rounded-full bg-maroon px-6 text-sm font-semibold text-white transition hover:bg-maroon-dark">
                 Subscribe
               </button>
             </form>

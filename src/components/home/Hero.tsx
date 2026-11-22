@@ -38,13 +38,13 @@ export default function Hero() {
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <Link
                 href="/register"
-                className="rounded-md bg-maroon px-6 py-3 text-sm font-semibold text-white shadow-card transition hover:bg-maroon-dark"
+                className="rounded-full bg-maroon px-6 py-3 text-sm font-semibold text-white shadow-card transition hover:bg-maroon-dark"
               >
                 Create your profile
               </Link>
               <Link
                 href="/matches"
-                className="rounded-md border border-ink/25 bg-white/70 px-6 py-3 text-sm font-semibold text-ink backdrop-blur transition hover:border-maroon hover:text-maroon"
+                className="rounded-full border border-ink/25 bg-white/70 px-6 py-3 text-sm font-semibold text-ink backdrop-blur transition hover:border-maroon hover:text-maroon"
               >
                 Browse matches
               </Link>
@@ -53,7 +53,7 @@ export default function Hero() {
 
           {/* Floating highlight card (like the reference's offer card) */}
           <div className="hidden justify-end self-end lg:flex">
-            <div className="w-56 rounded-xl bg-white/95 p-5 shadow-card backdrop-blur">
+            <div className="w-56 rounded-3xl bg-white/95 p-5 shadow-card backdrop-blur">
               <BadgeCheck className="h-6 w-6 text-maroon" aria-hidden />
               <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-soft">
                 Premium membership
