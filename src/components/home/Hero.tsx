@@ -5,9 +5,11 @@ import HeroSearch from "./HeroSearch";
 
 export default function Hero() {
   return (
-    <section className="relative">
+    // Desktop: exactly one screen tall (screen minus the 36px top bar and 73px header),
+    // with the photo running the full height behind the search card.
+    <section className="relative flex flex-col overflow-hidden bg-ivory lg:h-[calc(100svh-109px)] lg:min-h-[600px]">
       {/* Photo + copy band */}
-      <div className="relative overflow-hidden bg-ivory">
+      <div className="flex flex-1 flex-col">
         {/* Wedding photo — right side, melting into ivory on the left */}
         <div className="absolute inset-y-0 right-0 w-full lg:w-[60%]">
           <Image
@@ -22,7 +24,7 @@ export default function Hero() {
           <div className="absolute inset-0 bg-ivory/55 lg:hidden" />
         </div>
 
-        <div className="relative mx-auto grid max-w-7xl items-center px-5 pb-12 pt-14 lg:min-h-[600px] lg:grid-cols-2 lg:px-8 lg:pb-36">
+        <div className="relative mx-auto grid w-full max-w-7xl flex-1 items-center px-5 pb-8 pt-14 lg:grid-cols-2 lg:px-8 lg:py-8">
           <div className="max-w-xl">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-maroon">
               Begin your forever with us
@@ -71,8 +73,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Search card overlapping the bottom of the photo band */}
-      <div className="relative z-10 mx-auto mt-6 max-w-7xl px-5 lg:-mt-24 lg:px-8">
+      {/* Search card along the bottom of the screen, over the photo */}
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-10 lg:px-8 lg:pb-8">
         <HeroSearch />
       </div>
     </section>
