@@ -3,12 +3,12 @@ import { ArrowRight, BadgeCheck, Crown, HeartHandshake, Lock, MapPin, Users } fr
 
 // "Our services" row from the reference, adapted to what CSP Matrimony offers.
 const FEATURES = [
-  { icon: BadgeCheck, title: "Verified profiles", body: "Every profile is checked so you meet genuine people.", href: "/about#verification" },
+  { icon: BadgeCheck, title: "Verified profiles", body: "Every profile is checked so you meet genuine people.", href: "/register" },
   { icon: HeartHandshake, title: "Daily matches", body: "Fresh matches every day, based on your partner preferences.", href: "/matches" },
-  { icon: MapPin, title: "Matches near you", body: "Find compatible people in your city or community.", href: "/matches?tab=near-me" },
+  { icon: MapPin, title: "Matches near you", body: "Find compatible people in your city or community.", href: "/matches?tab=near" },
   { icon: Users, title: "Detailed search", body: "Filter by age, religion, height, education and more.", href: "/search" },
-  { icon: Lock, title: "Privacy control", body: "Choose who can see your photos and contact details.", href: "/about#privacy" },
-  { icon: Crown, title: "Premium membership", body: "Unlock contact details, priority listing and more.", href: "/membership" },
+  { icon: Lock, title: "Privacy control", body: "Choose who can see your photos and contact details.", href: "/register" },
+  { icon: Crown, title: "Premium membership", body: "Unlock contact details, priority listing and more.", href: "/register" },
 ];
 
 export default function Features() {

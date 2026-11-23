@@ -61,10 +61,10 @@ export default function Hero() {
               <p className="mt-1 font-serif text-2xl text-ink">See who likes you</p>
               <p className="mt-1 text-sm text-ink-soft">Unlock contact details and priority matches.</p>
               <Link
-                href="/membership"
+                href="/register"
                 className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-maroon hover:gap-2.5"
               >
-                View plans <ArrowRight className="h-4 w-4" aria-hidden />
+                Join free <ArrowRight className="h-4 w-4" aria-hidden />
               </Link>
             </div>
           </div>

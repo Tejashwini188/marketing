@@ -4,9 +4,6 @@ import { Logo } from "./SiteHeader";
 
 const NAV = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/matches", label: "Matches" },
-  { href: "/search", label: "Search" },
   { href: "/success-stories", label: "Success Stories" },
   { href: "/contact", label: "Contact" },
 ];
@@ -14,9 +11,9 @@ const NAV = [
 const MEMBERS = [
   { href: "/register", label: "Register free" },
   { href: "/login", label: "Member login" },
-  { href: "/dashboard", label: "My profile" },
-  { href: "/membership", label: "Membership plans" },
-  { href: "/matches?tab=today", label: "Today's matches" },
+  { href: "/dashboard", label: "My dashboard" },
+  { href: "/matches", label: "Matches" },
+  { href: "/search", label: "Search" },
 ];
 
 export default function SiteFooter() {

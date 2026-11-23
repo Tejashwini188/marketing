@@ -30,10 +30,10 @@ export default function WhyUs() {
             tradition.
           </p>
           <Link
-            href="/about"
+            href="/success-stories"
             className="mt-6 inline-block rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-maroon transition hover:bg-maroon-50"
           >
-            Learn more about us
+            Read success stories
           </Link>
         </div>
       </div>

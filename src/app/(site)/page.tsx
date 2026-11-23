@@ -1,6 +1,3 @@
-import TopBar from "@/components/TopBar";
-import SiteHeader from "@/components/SiteHeader";
-import SiteFooter from "@/components/SiteFooter";
 import Hero from "@/components/home/Hero";
 import Features from "@/components/home/Features";
 import OurStories from "@/components/home/OurStories";
@@ -11,17 +8,12 @@ import Newsletter from "@/components/home/Newsletter";
 export default function HomePage() {
   return (
     <>
-      <TopBar />
-      <SiteHeader />
-      <main>
-        <Hero />
-        <Features />
-        <OurStories />
-        <WhyUs />
-        <Testimonials />
-        <Newsletter />
-      </main>
-      <SiteFooter />
+      <Hero />
+      <Features />
+      <OurStories />
+      <WhyUs />
+      <Testimonials />
+      <Newsletter />
     </>
   );
 }

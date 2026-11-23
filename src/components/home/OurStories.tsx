@@ -27,7 +27,7 @@ function curve(offset: number) {
   };
 }
 
-export default function OurStories() {
+export default function OurStories({ cta = true }: { cta?: boolean }) {
   return (
     <section className="overflow-hidden py-20">
       <div className="mx-auto max-w-3xl px-5 text-center">
@@ -98,6 +98,7 @@ export default function OurStories() {
         ))}
       </div>
 
+      {cta && (
       <div className="mt-14 text-center">
         <Link
           href="/success-stories"
@@ -106,6 +107,7 @@ export default function OurStories() {
           Read their stories <ArrowRight className="h-4 w-4" aria-hidden />
         </Link>
       </div>
+      )}
     </section>
   );
 }

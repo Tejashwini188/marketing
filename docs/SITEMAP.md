@@ -31,3 +31,12 @@ Two logins: **Admin** and **Users**.
 | Search | `/search` |
 | Admin login | `/admin/login` |
 | Admin dashboard | `/admin` (stats, memberships, grant access, permissions) |
+
+
+## Built (2026-11-23)
+
+Public (anyone): `/` Home · `/success-stories` · `/contact` · `/login` · `/register`
+Members only (after register / login): `/dashboard` · `/matches?tab=new|today|my|near|all` · `/matches/[id]` · `/search`
+
+No About or Membership pages. Admin area not built yet.
+Member data (accounts, sessions, photos) is kept locally in `.data/` (git-ignored).
